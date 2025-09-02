@@ -1,45 +1,8 @@
 {
-"compilerOptions": {
-"target": "ES2020",
-"lib": ["dom", "dom.iterable", "esnext"],
-"allowJs": false,
-"skipLibCheck": true,
-"strict": true,
-"noEmit": true,
-"esModuleInterop": true,
-"module": "esnext",
-"moduleResolution": "bundler",
-"resolveJsonModule": true,
-"isolatedModules": true,
-"jsx": "preserve",
-"plugins": [{ "name": "next" }],
-"paths": { "@/*": ["./*"] }
-},
-"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-"exclude": ["node_modules"]
-import type { Config } from 'tailwindcss';
-
-
-const config: Config = {
-content: [
-'./app/**/*.{ts,tsx}',
-'./components/**/*.{ts,tsx}',
-'./styles/**/*.{css}',
-],
-theme: {
-extend: {
-fontFamily: {
-display: ['ui-sans-serif', 'system-ui', 'Segoe UI', 'Roboto', 'Inter', 'Helvetica', 'Arial', 'sans-serif'],
-},
-},
-},
-plugins: [],
-};
-export default config;{
   "compilerOptions": {
-    "target": "ES2017",
+    "target": "ES2020",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
+    "allowJs": false,
     "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
@@ -49,16 +12,9 @@ export default config;{
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true,
-    "plugins": [
-      {
-        "name": "next"
-      }
-    ],
-    "paths": {
-      "@/*": ["./*"]
-    }
+    "plugins": [{ "name": "next" }],
+    "paths": { "@/*": ["./*"] }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
